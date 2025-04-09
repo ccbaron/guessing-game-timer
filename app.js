@@ -12,6 +12,25 @@ let numGuesses = 1;
 let playGame = true;
 let remainingTime = 30;
 
+// Actualizar el DOM con el remainigTime
+const spanTimer = document.querySelector('#timer');
+spanTimer.textContent = remainingTime;
+
+setInterval(function() {
+  console.log(remainingTime);
+
+  // 1. Decrementar la variable remainigTime
+
+
+  
+  // 2. Actualizar el DOM #timer
+
+
+
+  // 3. Si remainingTime llega a 0 -> hemos perdido. Ejecutar la función displayMessage y endGame
+
+}, 1000);
+
 if (playGame) {
   subt.addEventListener('click', function (e) {
     e.preventDefault();
